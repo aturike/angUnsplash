@@ -1,0 +1,6 @@
+<div class="image-container-grid">
+  <app-imagecard
+    *ngFor="let image of images$ | async; trackBy: trackByFunction"
+    [imgData]="image"
+  ></app-imagecard>
+</div>
